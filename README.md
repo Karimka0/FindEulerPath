@@ -4,7 +4,7 @@ This project contains a C++ implementation to check and find Eulerian paths and 
 
 ## Overview
 
-The program utilizes Depth-First Search (DFS) to determine the connectivity of a graph and calculates if an Eulerian path or an Eulerian cycle exists based on the degrees of vertices.
+First, the program checks whether this graph is oriented. Next, we check the criterion for the degree of vertices and the connectivity of the graph, and if true, then the graph is Eulerian or semi-Eulerian. And in this case, the output function of the Eulerian cycle or path is started.
 
 ## Features
 
@@ -14,7 +14,7 @@ The program utilizes Depth-First Search (DFS) to determine the connectivity of a
 
 ## How to Compile
 
-Ensure you have a C++ compiler installed. You can compile the code using g++ on the command line:
+Ensure you have a C++ compiler installed. You can compile the code in the development environment or using  g++ on the command line:
 
 ```bash
 g++ -o eulerian eulerian.cpp
