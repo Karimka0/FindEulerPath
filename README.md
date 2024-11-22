@@ -15,17 +15,7 @@ First, the program checks whether this graph is oriented. Next, we check the cri
 
 ## How to Use
 
-1. **Compile the program**:
-   ```bash
-   g++ -o eulerian eulerian.cpp
-   ```
-
-2. **Run the program**:
-   ```bash
-   ./eulerian
-   ```
-
-3. **Follow the program's instructions**:
+ **Follow the program's instructions**:
    - Enter the number of vertices in the graph.
    - Input the adjacency matrix of the graph.
 
@@ -90,23 +80,3 @@ The graph is not Eulerian!
 ```
 
 ---
-
-## Features
-
-- **Supports undirected graphs**.
-- **Supports directed graphs**.
-- Automatically detects the type of graph (directed or undirected).
-- Outputs Eulerian paths in reverse order for directed graphs when the path is not a cycle.
-
----
-
-## Limitations
-
-- The adjacency matrix must be valid.
-- The program works only with finite graphs.
-
----
-
-## Author
-
-This program is designed for educational and research purposes.
