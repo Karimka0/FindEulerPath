@@ -1,9 +1,9 @@
-# An algorithm searching for Euler path or cycle
+ # An algorithm searching for Euler path or cycle
 
 This project contains a C++ implementation of searching Euler path or cycle both in directed and in undirected graphs. The program is created as part of the "Discrete analysis" course by A.M. Raigorodskiy at Moscow Institute of Physics and Technology.
 
 ## Overview
-The program accepts the number of vertices and the adjacency matrix of the graph as input. The program checks whether this graph is oriented. Next, the program checks the condition of criterion for the degree of vertices and the connectivity of the graph. If the graph is connected and the criterion is correct, then the graph is Euler graph or semi-Euler graph. And depending on this, the program outputs an Euler cycle or a path, respectively.
+The program accepts the number of vertices and the adjacency matrix of the graph or oriented graph as input. The program checks whether the adjacencey matrix is symmetric, i.e. whether we are given a graph or  an  oriented graph. Next, the program checks the conditions for the degrees of vertices and the connectivity of the graph. If the graph is connected and the ??condition is fulfilled, then the graph is an Euler graph or semi-Euler graph. ???And depending on this, the program outputs an Euler cycle or a path, respectively.
 
 ## Features
 
