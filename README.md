@@ -38,7 +38,7 @@ The program will output one of the following results:
 
 ## Input and Output Examples
 
-### Example 1: Eulerian Cycle
+### Example 1: Eulerian Way
 **Input**:
 ```
 Enter the number of vertices in the graph: 4
@@ -51,12 +51,12 @@ Enter the adjacency matrix for the graph:
 
 **Output**:
 ```
-The Eulerian cycle: -> 0 -> 1 -> 3 -> 1 -> 2 -> 0
+The Eulerian way: -> 2 -> 3 -> 1 -> 2 -> 0 -> 1
 ```
 
 ---
 
-### Example 2: Eulerian Path
+### Example 2: Eulerian ...
 **Input**:
 ```
 Enter the number of vertices in the graph: 4
@@ -69,7 +69,7 @@ Enter the adjacency matrix for the graph:
 
 **Output**:
 ```
-The Eulerian way: -> 3 -> 1 -> 0 -> 2 -> 1
+The Eulerian way: 
 ```
 
 ---
