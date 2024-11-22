@@ -1,16 +1,15 @@
-# The Eulerian cycle/path search algorithm
+# An algorithm searching for Euler path or cycle
 
-This project contains a C++ implementation of checking existence and finding Eulerian path or cycle in both directed and undirected graphs. as part of the Discrete Analysis course. The program is created as part of the "Discrete analysis" course by A.M. Raigorodskiy at Moscow Institute of Physics and Technology.
+This project contains a C++ implementation of searching Euler path or cycle both in directed and in undirected graphs. The program is created as part of the "Discrete analysis" course by A.M. Raigorodskiy at Moscow Institute of Physics and Technology.
 
 ## Overview
-
-First, the program checks whether this graph is oriented. Next, the program checks the condition of criterion for the degree of vertices and the connectivity of the graph. If the graph is connected and the criterion is correct, then the graph is Euler graph or semiEuler graph. And depending on this, the program outputs an Euler cycle or a path, respectively (соответственно).
+The program accepts the number of vertices and the adjacency matrix of the graph as input. The program checks whether this graph is oriented. Next, the program checks the condition of criterion for the degree of vertices and the connectivity of the graph. If the graph is connected and the criterion is correct, then the graph is Euler graph or semi-Euler graph. And depending on this, the program outputs an Euler cycle or a path, respectively (соответственно).
 
 ## Features
 
 - Determines if a given graph has an Eulerian path or cycle.
-- Can process both directed and undirected graphs.
 - Outputs the Eulerian path or cycle if one exists.
+- - Can process both directed and undirected graphs.
 
 
 ## How to Use
@@ -20,9 +19,9 @@ First, the program checks whether this graph is oriented. Next, the program chec
 - Input the adjacency matrix of the graph.
 
 The program will output one of the following results:
-- The Eulerian cycle: a sequence of vertices.
-- The Eulerian path: a sequence of vertices.
-- A message indicating that the graph is not Eulerian.
+- "The Eulerian cycle: a sequence of vertices"
+- "The Eulerian path: a sequence of vertices"
+- "The graph is not Eulerian!"
 
 ---
 
