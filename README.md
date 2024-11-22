@@ -1,6 +1,6 @@
 # The Eulerian cycle/path search algorithm
 
-This project contains a C++ implementation of checking existence and finding Eulerian paths or cycle in both directed and undirected graphs. as part of the Discrete Analysis course. The program is created as part of the "Discrete analysis" course by A.M. Raigorodskiy at Moscow Institute of Physics and Technology.
+This project contains a C++ implementation of checking existence and finding Eulerian path or cycle in both directed and undirected graphs. as part of the Discrete Analysis course. The program is created as part of the "Discrete analysis" course by A.M. Raigorodskiy at Moscow Institute of Physics and Technology.
 
 ## Overview
 
@@ -15,9 +15,9 @@ First, the program checks whether this graph is oriented. Next, the program chec
 
 ## How to Use
 
- **Follow the program's instructions**:
-   - Enter the number of vertices in the graph.
-   - Input the adjacency matrix of the graph.
+**Follow the program's instructions**:
+- Enter the number of vertices in the graph.
+- Input the adjacency matrix of the graph.
 
 The program will output one of the following results:
 - The Eulerian cycle: a sequence of vertices.
@@ -59,7 +59,7 @@ Enter the adjacency matrix for the graph:
 
 **Output**:
 ```
-The Eulerian way: 
+The Eulerian way: -> 3 -> 1 -> 2 -> 0 -> 1
 ```
 
 ---
@@ -70,8 +70,8 @@ The Eulerian way:
 Enter the number of vertices in the graph: 3
 Enter the adjacency matrix for the graph:
 0 1 1
-1 0 0
-1 0 0
+0 0 0
+0 0 0
 ```
 
 **Output**:
