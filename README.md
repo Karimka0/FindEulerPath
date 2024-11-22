@@ -11,7 +11,6 @@ The program accepts the number of vertices and the adjacency matrix of the graph
 - Outputs the Eulerian path or cycle if one exists.
 - Can process both directed and undirected graphs.
 
-
 ## How to Use
 
 **Follow the program's instructions**:
@@ -45,7 +44,7 @@ The Eulerian way: -> 2 -> 3 -> 1 -> 2 -> 0 -> 1
 
 ---
 
-### Example 2: Eulerian ...
+### Example 2: Eulerian way
 **Input**:
 ```
 Enter the number of vertices in the graph: 4
