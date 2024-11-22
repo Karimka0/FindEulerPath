@@ -13,10 +13,68 @@ First, the program checks whether this graph is oriented. Next, we check the cri
 - Outputs the Eulerian path or cycle if one exists.
 
 
-
 ## How to Compile
 
 Ensure you have a C++ compiler installed. You can compile the code in the development environment or using  g++ on the command line:
 
 ```bash
 g++ -o eulerian eulerian.cpp
+
+
+
+---
+
+## Input and Output Examples
+
+### Example 1: Eulerian Cycle
+**Input**:
+```
+Enter the number of vertices in the graph: 4
+Enter the adjacency matrix for the graph:
+0 1 1 0
+1 0 1 1
+1 1 0 1
+0 1 1 0
+```
+
+**Output**:
+```
+The Eulerian cycle: -> 0 -> 1 -> 3 -> 1 -> 2 -> 0
+```
+
+---
+
+### Example 2: Eulerian Path
+**Input**:
+```
+Enter the number of vertices in the graph: 4
+Enter the adjacency matrix for the graph:
+0 1 1 0
+1 0 1 1
+1 1 0 0
+0 1 0 0
+```
+
+**Output**:
+```
+The Eulerian way: -> 3 -> 1 -> 0 -> 2 -> 1
+```
+
+---
+
+### Example 3: Non-Eulerian Graph
+**Input**:
+```
+Enter the number of vertices in the graph: 3
+Enter the adjacency matrix for the graph:
+0 1 1
+1 0 0
+1 0 0
+```
+
+**Output**:
+```
+The graph is not Eulerian!
+```
+
+---
