@@ -1,9 +1,10 @@
 #include <iostream>
 #include <vector>
 #include <stack>
+#include <windows.h>
 
 bool is_oriented = false; // Indicates if the graph is oriented
-bool is_cycle = true;     // Tracks if the graph is an Eulerian cycle
+bool is_cycle = true;     // Tracks if the graph is an Euler cycle
 
 // DFS to check connectivity
 void Dfs(int v, const std::vector<std::vector<int>> &graph, std::vector<bool> &visited) {
@@ -15,7 +16,7 @@ void Dfs(int v, const std::vector<std::vector<int>> &graph, std::vector<bool> &v
   }
 }
 
-// Check for Eulerian path or cycle
+// Check for Euler path or cycle
 bool CheckForEulerPath(const std::vector<std::vector<int>> &graph,
                        const std::vector<std::vector<int>> &rev_graph,
                        const std::vector<int> &degrees,
@@ -66,7 +67,7 @@ bool CheckForEulerPath(const std::vector<std::vector<int>> &graph,
   return true;
 }
 
-// Construct and print the Eulerian path
+// Construct and print the Euler path
 std::vector<int> FindEulerPath(int v, std::vector<std::vector<int>> &graph, const std::vector<int> &degrees) {
   for (int u = 0; u < degrees.size(); ++u) {
     if (degrees[u] % 2 == 1) {
@@ -74,7 +75,7 @@ std::vector<int> FindEulerPath(int v, std::vector<std::vector<int>> &graph, cons
       break;
     }
   }
-  std::vector<int> way;
+  std::vector<int> path;
   std::stack<int> S;
   S.push(v);
   while (!S.empty()) {
@@ -93,13 +94,15 @@ std::vector<int> FindEulerPath(int v, std::vector<std::vector<int>> &graph, cons
     }
     if (!found_edge) {
       S.pop();
-      way.push_back(w);
+      path.push_back(w);
     }
   }
-  return way;
+  return path;
 }
 
 int main() {
+  SetConsoleCP(65001);
+  SetConsoleOutputCP(65001);
   std::cout << "Enter the number of vertices in the graph:";
   int n;
   std::cin >> n;
@@ -111,6 +114,14 @@ int main() {
   for (int i = 0; i < n; ++i) {
     for (int j = 0; j < n; ++j) {
       std::cin >> graph[i][j];
+      if (graph[i][j] != 0 && graph[i][j] != 1) {
+        std::cout << "The input is incorrect!";
+        return 0;
+      }
+      if (i == j && graph[i][j] != 0) {
+        std::cout << "The input is incorrect!";
+        return 0;
+      }
       rev_graph[j][i] = graph[i][j];
       degrees[i] += graph[i][j];
       in_degrees[j] += graph[i][j];
@@ -122,21 +133,21 @@ int main() {
   }
   if (CheckForEulerPath(graph, rev_graph, degrees, in_degrees)) {
     if (is_cycle) {
-      std::cout << "The Eulerian cycle:";
+      std::cout << "The Euler cycle:";
     } else {
-      std::cout << "The Eulerian way:";
+      std::cout << "The Euler path:";
     }
-    std::vector<int> way = FindEulerPath(0, graph, degrees);
+    std::vector<int> path = FindEulerPath(0, graph, degrees);
     if (is_oriented && !is_cycle) {
-      for (int i = way.size() - 1; i >= 0; --i) {
-        std::cout << " -> " << way[i];
+      for (int i = path.size() - 1; i >= 0; --i) {
+        std::cout << " -> " << path[i];
       }
     } else {
-      for (int i : way) {
+      for (int i : path) {
         std::cout << " -> " << i;
       }
     }
   } else {
-    std::cout << "The graph is not Eulerian!";
+    std::cout << "The graph is not Euler!";
   }
 }
