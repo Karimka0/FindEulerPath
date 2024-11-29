@@ -74,7 +74,7 @@ Enter the adjacency matrix for the graph:
 
 **Output**:
 ```
-The graph is not Eulerian!
+The graph is not Euler!
 ```
 
 ---
