@@ -18,8 +18,8 @@ The program accepts the number of vertices and the adjacency matrix of the graph
 - Input the adjacency matrix of the graph line by line.
 
 The program will output one of the following results:
-- "The Eulerian cycle: a sequence of vertices"
-- "The Eulerian path: a sequence of vertices"
+- "The Euler cycle: a sequence of vertices"
+- "The Euler path: a sequence of vertices"
 - "The graph is not Euler!"
 
 ---
@@ -62,7 +62,7 @@ The Euler path: -> 3 -> 1 -> 2 -> 0 -> 1
 
 ---
 
-### Example 3: Non-Eulerian Graph
+### Example 3: Non-Euler Graph
 **Input**:
 ```
 Enter the number of vertices in the graph: 3
