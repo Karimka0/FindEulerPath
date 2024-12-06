@@ -23,8 +23,8 @@ The program will output one of the following results:
 ### Example 1: Euler path
 **Input**:
 ```
-Enter the number of vertices in the graph: 4
-Enter the adjacency matrix for the graph:
+Please, enter the number of vertices in the graph: 4
+Please, enter the adjacency matrix for the graph line by line:
 0 1 1 0
 1 0 1 1
 1 1 0 1
@@ -41,8 +41,8 @@ The Euler Path: -> 2 -> 3 -> 1 -> 2 -> 0 -> 1
 ### Example 2: Euler path
 **Input**:
 ```
-Enter the number of vertices in the graph: 4
-Enter the adjacency matrix for the graph:
+Please, enter the number of vertices in the graph: 4
+Please, enter the adjacency matrix for the graph line by line:
 0 1 1 0
 1 0 1 1
 1 1 0 0
@@ -59,8 +59,8 @@ The Euler path: -> 3 -> 1 -> 2 -> 0 -> 1
 ### Example 3: Non-Euler Graph
 **Input**:
 ```
-Enter the number of vertices in the graph: 3
-Enter the adjacency matrix for the graph:
+Please, enter the number of vertices in the graph: 3
+Please, enter the adjacency matrix for the graph line by line:
 0 1 1
 0 0 0
 0 0 0
