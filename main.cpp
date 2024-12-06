@@ -103,14 +103,14 @@ std::vector<int> FindEulerPath(int v, std::vector<std::vector<int>> &graph, cons
 int main() {
   SetConsoleCP(65001);
   SetConsoleOutputCP(65001);
-  std::cout << "Enter the number of vertices in the graph:";
+  std::cout << "Please, enter the number of vertices in the graph:";
   int n;
   std::cin >> n;
   std::vector<std::vector<int>> graph(n, std::vector<int>(n, 0));
   std::vector<std::vector<int>> rev_graph(n, std::vector<int>(n, 0));
   std::vector<int> in_degrees(n, 0);
   std::vector<int> degrees(n, 0);
-  std::cout << "Enter the adjacency matrix for the graph:\n";
+  std::cout << "Please, enter the adjacency matrix for the graph line by line:\n";
   for (int i = 0; i < n; ++i) {
     for (int j = 0; j < n; ++j) {
       std::cin >> graph[i][j];
@@ -148,6 +148,6 @@ int main() {
       }
     }
   } else {
-    std::cout << "The graph is not Euler!";
+    std::cout << "The graph is not Euler graph!";
   }
 }
