@@ -68,7 +68,7 @@ Please, enter the adjacency matrix for the graph line by line:
 
 **Output**:
 ```
-The graph is not Euler!
+The graph is not Euler graph!
 ```
 
 ---
