@@ -20,7 +20,7 @@ The program accepts the number of vertices and the adjacency matrix of the graph
 The program will output one of the following results:
 - "The Euler cycle: a sequence of vertices"
 - "The Euler path: a sequence of vertices"
-- "The graph is not Euler!"
+- "The graph is not Euler graph!"
 
 ---
 
